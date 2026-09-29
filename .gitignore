@@ -1,0 +1,12 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Temporary scratch & test renders
+e_ticketing_diagrams/scratch/
+*.tmp
+
+# OS files
+.DS_Store
+Thumbs.db

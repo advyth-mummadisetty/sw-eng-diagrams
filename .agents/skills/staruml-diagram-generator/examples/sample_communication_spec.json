@@ -1,0 +1,54 @@
+{
+  "project_name": "E-Ticketing System",
+  "diagram_name": "E-Ticketing Collaboration Diagram",
+  "node_width": 180,
+  "node_height": 65,
+  "lifelines": {
+    "Passenger": { "x": 220, "y": 100, "color": "#e8f5e9" },
+    "Web Portal": { "x": 220, "y": 450, "color": "#f5f5f5" },
+    "Notification Service": { "x": 220, "y": 800, "color": "#e8f5e9" },
+    "Booking Service": { "x": 870, "y": 100, "color": "#fff9c4" },
+    "Booking Engine": { "x": 870, "y": 450, "color": "#eeeeee" },
+    "Database": { "x": 870, "y": 800, "color": "#fff9c4" },
+    "Train Service": { "x": 1520, "y": 100, "color": "#e1f5fe" },
+    "Payment Gateway": { "x": 1520, "y": 450, "color": "#f3e5f5" },
+    "Loyalty Service": { "x": 1520, "y": 800, "color": "#fce4ec" }
+  },
+  "paths": [
+    { "source": "Passenger", "target": "Booking Service" },
+    { "source": "Passenger", "target": "Web Portal" },
+    { "source": "Web Portal", "target": "Booking Service" },
+    { "source": "Booking Service", "target": "Train Service" },
+    { "source": "Booking Service", "target": "Payment Gateway" },
+    { "source": "Booking Service", "target": "Loyalty Service" },
+    { "source": "Booking Service", "target": "Booking Engine" },
+    { "source": "Booking Engine", "target": "Database" },
+    { "source": "Booking Service", "target": "Notification Service" },
+    { "source": "Notification Service", "target": "Web Portal" }
+  ],
+  "messages": [
+    { "seq": 1, "name": "register()/login()", "source": "Passenger", "target": "Booking Service", "sort": "synchCall", "alpha": 1.570796, "dist": 30, "lbl_alpha": 1.570796, "lbl_dist": 15 },
+    { "seq": 2, "name": "authentication result", "source": "Booking Service", "target": "Passenger", "sort": "reply", "alpha": -1.570796, "dist": 25, "lbl_alpha": -1.570796, "lbl_dist": 15 },
+    { "seq": 3, "name": "searchTrains()", "source": "Passenger", "target": "Web Portal", "sort": "synchCall", "alpha": -1.570796, "dist": 35, "lbl_alpha": 3.141592, "lbl_dist": 65 },
+    { "seq": 4, "name": "requestBooking()", "source": "Web Portal", "target": "Booking Service", "sort": "synchCall", "alpha": 1.570796, "dist": 35, "lbl_alpha": 1.570796, "lbl_dist": 15 },
+    { "seq": 5, "name": "checkAvailability()", "source": "Booking Service", "target": "Train Service", "sort": "synchCall", "alpha": 1.570796, "dist": 30, "lbl_alpha": 1.570796, "lbl_dist": 15 },
+    { "seq": 6, "name": "availabilityStatus()", "source": "Train Service", "target": "Booking Service", "sort": "reply", "alpha": -1.570796, "dist": 25, "lbl_alpha": -1.570796, "lbl_dist": 15 },
+    { "seq": 7, "name": "makePayment(amount)", "source": "Booking Service", "target": "Payment Gateway", "sort": "synchCall", "alpha": 1.570796, "dist": 35, "lbl_alpha": 1.570796, "lbl_dist": 15 },
+    { "seq": 8, "name": "paymentConfirmation()", "source": "Payment Gateway", "target": "Booking Service", "sort": "reply", "alpha": -1.570796, "dist": 35, "lbl_alpha": -1.570796, "lbl_dist": 15 },
+    { "seq": 9, "name": "applyLoyalty()", "source": "Booking Service", "target": "Loyalty Service", "sort": "synchCall", "alpha": 1.570796, "dist": 35, "lbl_alpha": 1.570796, "lbl_dist": 15 },
+    { "seq": 10, "name": "loyaltyApplied()", "source": "Loyalty Service", "target": "Booking Service", "sort": "reply", "alpha": -1.570796, "dist": 35, "lbl_alpha": -1.570796, "lbl_dist": 15 },
+    { "seq": 11, "name": "forwardBooking()", "source": "Booking Service", "target": "Booking Engine", "sort": "synchCall", "alpha": -1.570796, "dist": 35, "lbl_alpha": 3.141592, "lbl_dist": 70 },
+    { "seq": 12, "name": "getBookingDetails()", "source": "Booking Engine", "target": "Database", "sort": "synchCall", "alpha": -2.094395, "dist": 65, "lbl_alpha": 3.141592, "lbl_dist": 80 },
+    { "seq": 13, "name": "bookingDetails", "source": "Database", "target": "Booking Engine", "sort": "reply", "alpha": 2.094395, "dist": 65, "lbl_alpha": 0.0, "lbl_dist": 65 },
+    { "seq": 14, "name": "updateBookingStatus()", "source": "Booking Engine", "target": "Database", "sort": "synchCall", "alpha": -1.047198, "dist": 65, "lbl_alpha": 3.141592, "lbl_dist": 85 },
+    { "seq": 15, "name": "updateConfirmation()", "source": "Database", "target": "Booking Engine", "sort": "reply", "alpha": 1.047198, "dist": 65, "lbl_alpha": 0.0, "lbl_dist": 80 },
+    { "seq": 16, "name": "updateStatus()", "source": "Booking Engine", "target": "Booking Service", "sort": "reply", "alpha": 1.570796, "dist": 35, "lbl_alpha": 0.0, "lbl_dist": 65 },
+    { "seq": 17, "name": "bookingStatus()", "source": "Booking Service", "target": "Passenger", "sort": "reply", "alpha": -1.570796, "dist": 65, "lbl_alpha": -1.570796, "lbl_dist": 15 },
+    { "seq": 18, "name": "sendNotification()", "source": "Booking Service", "target": "Notification Service", "sort": "synchCall", "alpha": -1.570796, "dist": 35, "lbl_alpha": 1.570796, "lbl_dist": 15 },
+    { "seq": 19, "name": "notifyPassenger()", "source": "Notification Service", "target": "Web Portal", "sort": "reply", "alpha": 1.570796, "dist": 35, "lbl_alpha": 3.141592, "lbl_dist": 70 }
+  ],
+  "notes": [
+    { "left": 1060, "top": 460, "width": 170, "height": 50, "text": "Engine verifies booking\\ndetails and generates PNR" },
+    { "left": 1190, "top": 660, "width": 230, "height": 125, "text": "Legend:\\n\u27f6  Synchronous Message\\n---\u2794  Return Message\\n\\nObject / Participant:\\n: ObjectName\\n\\nSequence: 1, 2, 3, ... in order" }
+  ]
+}

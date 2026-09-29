@@ -1,0 +1,1413 @@
+{
+  "_type": "Project",
+  "_id": "COLLAB001PROJ000000001",
+  "name": "E-Ticketing Collaboration Diagram",
+  "ownedElements": [
+    {
+      "_type": "UMLModel",
+      "_id": "COLLAB001MODEL00000001",
+      "_parent": {
+        "$ref": "COLLAB001PROJ000000001"
+      },
+      "name": "E-Ticketing System Model",
+      "ownedElements": [
+        {
+          "_type": "UMLCollaboration",
+          "_id": "COLLAB001COLLA00000001",
+          "_parent": {
+            "$ref": "COLLAB001MODEL00000001"
+          },
+          "name": "Collaboration1",
+          "ownedElements": [
+            {
+              "_type": "UMLInteraction",
+              "_id": "COLLAB001INTER00000001",
+              "_parent": {
+                "$ref": "COLLAB001COLLA00000001"
+              },
+              "name": "Interaction1",
+              "ownedElements": [
+                {
+                  "_type": "UMLLifeline",
+                  "_id": "COLLAB001LIFE000000001",
+                  "_parent": {
+                    "$ref": "COLLAB001INTER00000001"
+                  },
+                  "name": "Passenger"
+                },
+                {
+                  "_type": "UMLLifeline",
+                  "_id": "COLLAB001LIFE000000002",
+                  "_parent": {
+                    "$ref": "COLLAB001INTER00000001"
+                  },
+                  "name": "UserInterface"
+                },
+                {
+                  "_type": "UMLLifeline",
+                  "_id": "COLLAB001LIFE000000003",
+                  "_parent": {
+                    "$ref": "COLLAB001INTER00000001"
+                  },
+                  "name": "BookingController"
+                },
+                {
+                  "_type": "UMLLifeline",
+                  "_id": "COLLAB001LIFE000000004",
+                  "_parent": {
+                    "$ref": "COLLAB001INTER00000001"
+                  },
+                  "name": "Database"
+                },
+                {
+                  "_type": "UMLLifeline",
+                  "_id": "COLLAB001LIFE000000005",
+                  "_parent": {
+                    "$ref": "COLLAB001INTER00000001"
+                  },
+                  "name": "PaymentGateway"
+                },
+                {
+                  "_type": "UMLLifeline",
+                  "_id": "COLLAB001LIFE000000006",
+                  "_parent": {
+                    "$ref": "COLLAB001INTER00000001"
+                  },
+                  "name": "NotificationServer"
+                },
+                {
+                  "_type": "UMLCommunicationPath",
+                  "_id": "COLLAB001PATH00000001",
+                  "_parent": {
+                    "$ref": "COLLAB001INTER00000001"
+                  },
+                  "end1": {
+                    "_type": "UMLAssociationEnd",
+                    "_id": "COLLAB001END0000000001",
+                    "_parent": {
+                      "$ref": "COLLAB001PATH00000001"
+                    },
+                    "reference": {
+                      "$ref": "COLLAB001LIFE000000001"
+                    }
+                  },
+                  "end2": {
+                    "_type": "UMLAssociationEnd",
+                    "_id": "COLLAB001END0000000002",
+                    "_parent": {
+                      "$ref": "COLLAB001PATH00000001"
+                    },
+                    "reference": {
+                      "$ref": "COLLAB001LIFE000000002"
+                    }
+                  }
+                },
+                {
+                  "_type": "UMLCommunicationPath",
+                  "_id": "COLLAB001PATH00000002",
+                  "_parent": {
+                    "$ref": "COLLAB001INTER00000001"
+                  },
+                  "end1": {
+                    "_type": "UMLAssociationEnd",
+                    "_id": "COLLAB001END0000000003",
+                    "_parent": {
+                      "$ref": "COLLAB001PATH00000002"
+                    },
+                    "reference": {
+                      "$ref": "COLLAB001LIFE000000002"
+                    }
+                  },
+                  "end2": {
+                    "_type": "UMLAssociationEnd",
+                    "_id": "COLLAB001END0000000004",
+                    "_parent": {
+                      "$ref": "COLLAB001PATH00000002"
+                    },
+                    "reference": {
+                      "$ref": "COLLAB001LIFE000000003"
+                    }
+                  }
+                },
+                {
+                  "_type": "UMLCommunicationPath",
+                  "_id": "COLLAB001PATH00000003",
+                  "_parent": {
+                    "$ref": "COLLAB001INTER00000001"
+                  },
+                  "end1": {
+                    "_type": "UMLAssociationEnd",
+                    "_id": "COLLAB001END0000000005",
+                    "_parent": {
+                      "$ref": "COLLAB001PATH00000003"
+                    },
+                    "reference": {
+                      "$ref": "COLLAB001LIFE000000002"
+                    }
+                  },
+                  "end2": {
+                    "_type": "UMLAssociationEnd",
+                    "_id": "COLLAB001END0000000006",
+                    "_parent": {
+                      "$ref": "COLLAB001PATH00000003"
+                    },
+                    "reference": {
+                      "$ref": "COLLAB001LIFE000000004"
+                    }
+                  }
+                },
+                {
+                  "_type": "UMLCommunicationPath",
+                  "_id": "COLLAB001PATH00000004",
+                  "_parent": {
+                    "$ref": "COLLAB001INTER00000001"
+                  },
+                  "end1": {
+                    "_type": "UMLAssociationEnd",
+                    "_id": "COLLAB001END0000000007",
+                    "_parent": {
+                      "$ref": "COLLAB001PATH00000004"
+                    },
+                    "reference": {
+                      "$ref": "COLLAB001LIFE000000002"
+                    }
+                  },
+                  "end2": {
+                    "_type": "UMLAssociationEnd",
+                    "_id": "COLLAB001END0000000008",
+                    "_parent": {
+                      "$ref": "COLLAB001PATH00000004"
+                    },
+                    "reference": {
+                      "$ref": "COLLAB001LIFE000000005"
+                    }
+                  }
+                },
+                {
+                  "_type": "UMLCommunicationPath",
+                  "_id": "COLLAB001PATH00000005",
+                  "_parent": {
+                    "$ref": "COLLAB001INTER00000001"
+                  },
+                  "end1": {
+                    "_type": "UMLAssociationEnd",
+                    "_id": "COLLAB001END0000000009",
+                    "_parent": {
+                      "$ref": "COLLAB001PATH00000005"
+                    },
+                    "reference": {
+                      "$ref": "COLLAB001LIFE000000002"
+                    }
+                  },
+                  "end2": {
+                    "_type": "UMLAssociationEnd",
+                    "_id": "COLLAB001END0000000010",
+                    "_parent": {
+                      "$ref": "COLLAB001PATH00000005"
+                    },
+                    "reference": {
+                      "$ref": "COLLAB001LIFE000000006"
+                    }
+                  }
+                },
+                {
+                  "_type": "UMLCommunicationPath",
+                  "_id": "COLLAB001PATH00000006",
+                  "_parent": {
+                    "$ref": "COLLAB001INTER00000001"
+                  },
+                  "end1": {
+                    "_type": "UMLAssociationEnd",
+                    "_id": "COLLAB001END0000000011",
+                    "_parent": {
+                      "$ref": "COLLAB001PATH00000006"
+                    },
+                    "reference": {
+                      "$ref": "COLLAB001LIFE000000003"
+                    }
+                  },
+                  "end2": {
+                    "_type": "UMLAssociationEnd",
+                    "_id": "COLLAB001END0000000012",
+                    "_parent": {
+                      "$ref": "COLLAB001PATH00000006"
+                    },
+                    "reference": {
+                      "$ref": "COLLAB001LIFE000000004"
+                    }
+                  }
+                },
+                {
+                  "_type": "UMLMessage",
+                  "_id": "COLLAB001MSG0000000001",
+                  "_parent": {
+                    "$ref": "COLLAB001INTER00000001"
+                  },
+                  "name": "1: searchTrains()",
+                  "source": {
+                    "$ref": "COLLAB001LIFE000000001"
+                  },
+                  "target": {
+                    "$ref": "COLLAB001LIFE000000002"
+                  }
+                },
+                {
+                  "_type": "UMLMessage",
+                  "_id": "COLLAB001MSG0000000002",
+                  "_parent": {
+                    "$ref": "COLLAB001INTER00000001"
+                  },
+                  "name": "2: querySchedules()",
+                  "source": {
+                    "$ref": "COLLAB001LIFE000000002"
+                  },
+                  "target": {
+                    "$ref": "COLLAB001LIFE000000004"
+                  }
+                },
+                {
+                  "_type": "UMLMessage",
+                  "_id": "COLLAB001MSG0000000003",
+                  "_parent": {
+                    "$ref": "COLLAB001INTER00000001"
+                  },
+                  "name": "3: returnSchedules()",
+                  "source": {
+                    "$ref": "COLLAB001LIFE000000004"
+                  },
+                  "target": {
+                    "$ref": "COLLAB001LIFE000000002"
+                  },
+                  "messageSort": "reply"
+                },
+                {
+                  "_type": "UMLMessage",
+                  "_id": "COLLAB001MSG0000000004",
+                  "_parent": {
+                    "$ref": "COLLAB001INTER00000001"
+                  },
+                  "name": "4: displayResults()",
+                  "source": {
+                    "$ref": "COLLAB001LIFE000000002"
+                  },
+                  "target": {
+                    "$ref": "COLLAB001LIFE000000001"
+                  },
+                  "messageSort": "reply"
+                },
+                {
+                  "_type": "UMLMessage",
+                  "_id": "COLLAB001MSG0000000005",
+                  "_parent": {
+                    "$ref": "COLLAB001INTER00000001"
+                  },
+                  "name": "5: selectSeat()",
+                  "source": {
+                    "$ref": "COLLAB001LIFE000000001"
+                  },
+                  "target": {
+                    "$ref": "COLLAB001LIFE000000002"
+                  }
+                },
+                {
+                  "_type": "UMLMessage",
+                  "_id": "COLLAB001MSG0000000006",
+                  "_parent": {
+                    "$ref": "COLLAB001INTER00000001"
+                  },
+                  "name": "6: holdSeat()",
+                  "source": {
+                    "$ref": "COLLAB001LIFE000000002"
+                  },
+                  "target": {
+                    "$ref": "COLLAB001LIFE000000003"
+                  }
+                },
+                {
+                  "_type": "UMLMessage",
+                  "_id": "COLLAB001MSG0000000007",
+                  "_parent": {
+                    "$ref": "COLLAB001INTER00000001"
+                  },
+                  "name": "7: tempReserveSeat()",
+                  "source": {
+                    "$ref": "COLLAB001LIFE000000003"
+                  },
+                  "target": {
+                    "$ref": "COLLAB001LIFE000000004"
+                  }
+                },
+                {
+                  "_type": "UMLMessage",
+                  "_id": "COLLAB001MSG0000000008",
+                  "_parent": {
+                    "$ref": "COLLAB001INTER00000001"
+                  },
+                  "name": "8: seatReserved()",
+                  "source": {
+                    "$ref": "COLLAB001LIFE000000004"
+                  },
+                  "target": {
+                    "$ref": "COLLAB001LIFE000000003"
+                  },
+                  "messageSort": "reply"
+                },
+                {
+                  "_type": "UMLMessage",
+                  "_id": "COLLAB001MSG0000000009",
+                  "_parent": {
+                    "$ref": "COLLAB001INTER00000001"
+                  },
+                  "name": "9: holdConfirmed()",
+                  "source": {
+                    "$ref": "COLLAB001LIFE000000003"
+                  },
+                  "target": {
+                    "$ref": "COLLAB001LIFE000000002"
+                  },
+                  "messageSort": "reply"
+                },
+                {
+                  "_type": "UMLMessage",
+                  "_id": "COLLAB001MSG0000000010",
+                  "_parent": {
+                    "$ref": "COLLAB001INTER00000001"
+                  },
+                  "name": "10: makePayment()",
+                  "source": {
+                    "$ref": "COLLAB001LIFE000000001"
+                  },
+                  "target": {
+                    "$ref": "COLLAB001LIFE000000002"
+                  }
+                },
+                {
+                  "_type": "UMLMessage",
+                  "_id": "COLLAB001MSG0000000011",
+                  "_parent": {
+                    "$ref": "COLLAB001INTER00000001"
+                  },
+                  "name": "11: processPayment()",
+                  "source": {
+                    "$ref": "COLLAB001LIFE000000002"
+                  },
+                  "target": {
+                    "$ref": "COLLAB001LIFE000000005"
+                  }
+                },
+                {
+                  "_type": "UMLMessage",
+                  "_id": "COLLAB001MSG0000000012",
+                  "_parent": {
+                    "$ref": "COLLAB001INTER00000001"
+                  },
+                  "name": "12: paymentSuccess()",
+                  "source": {
+                    "$ref": "COLLAB001LIFE000000005"
+                  },
+                  "target": {
+                    "$ref": "COLLAB001LIFE000000002"
+                  },
+                  "messageSort": "reply"
+                },
+                {
+                  "_type": "UMLMessage",
+                  "_id": "COLLAB001MSG0000000013",
+                  "_parent": {
+                    "$ref": "COLLAB001INTER00000001"
+                  },
+                  "name": "13: commitBooking()",
+                  "source": {
+                    "$ref": "COLLAB001LIFE000000002"
+                  },
+                  "target": {
+                    "$ref": "COLLAB001LIFE000000004"
+                  }
+                },
+                {
+                  "_type": "UMLMessage",
+                  "_id": "COLLAB001MSG0000000014",
+                  "_parent": {
+                    "$ref": "COLLAB001INTER00000001"
+                  },
+                  "name": "14: sendNotification()",
+                  "source": {
+                    "$ref": "COLLAB001LIFE000000002"
+                  },
+                  "target": {
+                    "$ref": "COLLAB001LIFE000000006"
+                  }
+                },
+                {
+                  "_type": "UMLMessage",
+                  "_id": "COLLAB001MSG0000000015",
+                  "_parent": {
+                    "$ref": "COLLAB001INTER00000001"
+                  },
+                  "name": "15: generateTicket()",
+                  "source": {
+                    "$ref": "COLLAB001LIFE000000002"
+                  },
+                  "target": {
+                    "$ref": "COLLAB001LIFE000000001"
+                  },
+                  "messageSort": "reply"
+                },
+                {
+                  "_type": "UMLCommunicationDiagram",
+                  "_id": "COLLAB001DIAG00000001",
+                  "_parent": {
+                    "$ref": "COLLAB001INTER00000001"
+                  },
+                  "name": "Collaboration Diagram",
+                  "ownedViews": [
+                    {
+                      "_type": "UMLColLifelineView",
+                      "_id": "COLLAB001VIEW00000001",
+                      "_parent": {
+                        "$ref": "COLLAB001DIAG00000001"
+                      },
+                      "model": {
+                        "$ref": "COLLAB001LIFE000000001"
+                      },
+                      "subViews": [
+                        {
+                          "_type": "UMLNameCompartmentView",
+                          "_id": "COLLAB001NAMC00000001",
+                          "_parent": {
+                            "$ref": "COLLAB001VIEW00000001"
+                          },
+                          "model": {
+                            "$ref": "COLLAB001LIFE000000001"
+                          },
+                          "subViews": [
+                            {
+                              "_type": "LabelView",
+                              "_id": "COLLAB001LBL0000000001",
+                              "_parent": {
+                                "$ref": "COLLAB001NAMC00000001"
+                              },
+                              "visible": false,
+                              "font": "Arial;13;0",
+                              "parentStyle": true,
+                              "left": 60,
+                              "top": 280,
+                              "width": 120,
+                              "height": 13
+                            },
+                            {
+                              "_type": "LabelView",
+                              "_id": "COLLAB001LBL0000000002",
+                              "_parent": {
+                                "$ref": "COLLAB001NAMC00000001"
+                              },
+                              "font": "Arial;13;1",
+                              "parentStyle": true,
+                              "left": 65,
+                              "top": 287,
+                              "width": 110,
+                              "height": 13,
+                              "text": ": Passenger"
+                            },
+                            {
+                              "_type": "LabelView",
+                              "_id": "COLLAB001LBL0000000003",
+                              "_parent": {
+                                "$ref": "COLLAB001NAMC00000001"
+                              },
+                              "visible": false,
+                              "font": "Arial;13;0",
+                              "parentStyle": true,
+                              "left": 60,
+                              "top": 280,
+                              "width": 120,
+                              "height": 13,
+                              "text": "(from Interaction1)"
+                            },
+                            {
+                              "_type": "LabelView",
+                              "_id": "COLLAB001LBL0000000004",
+                              "_parent": {
+                                "$ref": "COLLAB001NAMC00000001"
+                              },
+                              "visible": false,
+                              "font": "Arial;13;0",
+                              "parentStyle": true,
+                              "left": 60,
+                              "top": 280,
+                              "width": 120,
+                              "height": 13
+                            }
+                          ],
+                          "font": "Arial;13;0",
+                          "parentStyle": true,
+                          "left": 60,
+                          "top": 280,
+                          "width": 121,
+                          "height": 40,
+                          "stereotypeLabel": {
+                            "$ref": "COLLAB001LBL0000000001"
+                          },
+                          "nameLabel": {
+                            "$ref": "COLLAB001LBL0000000002"
+                          },
+                          "namespaceLabel": {
+                            "$ref": "COLLAB001LBL0000000003"
+                          },
+                          "propertyLabel": {
+                            "$ref": "COLLAB001LBL0000000004"
+                          }
+                        }
+                      ],
+                      "font": "Arial;13;0",
+                      "fillColor": "#d4edda",
+                      "left": 60,
+                      "top": 280,
+                      "width": 120,
+                      "height": 60,
+                      "stereotype": true,
+                      "nameCompartment": {
+                        "$ref": "COLLAB001NAMC00000001"
+                      }
+                    },
+                    {
+                      "_type": "UMLColLifelineView",
+                      "_id": "COLLAB001VIEW00000002",
+                      "_parent": {
+                        "$ref": "COLLAB001DIAG00000001"
+                      },
+                      "model": {
+                        "$ref": "COLLAB001LIFE000000002"
+                      },
+                      "subViews": [
+                        {
+                          "_type": "UMLNameCompartmentView",
+                          "_id": "COLLAB001NAMC00000002",
+                          "_parent": {
+                            "$ref": "COLLAB001VIEW00000002"
+                          },
+                          "model": {
+                            "$ref": "COLLAB001LIFE000000002"
+                          },
+                          "subViews": [
+                            {
+                              "_type": "LabelView",
+                              "_id": "COLLAB001LBL0000000005",
+                              "_parent": {
+                                "$ref": "COLLAB001NAMC00000002"
+                              },
+                              "visible": false,
+                              "font": "Arial;13;0",
+                              "parentStyle": true,
+                              "left": 430,
+                              "top": 280,
+                              "width": 150,
+                              "height": 13
+                            },
+                            {
+                              "_type": "LabelView",
+                              "_id": "COLLAB001LBL0000000006",
+                              "_parent": {
+                                "$ref": "COLLAB001NAMC00000002"
+                              },
+                              "font": "Arial;13;1",
+                              "parentStyle": true,
+                              "left": 435,
+                              "top": 287,
+                              "width": 140,
+                              "height": 13,
+                              "text": ": UserInterface"
+                            },
+                            {
+                              "_type": "LabelView",
+                              "_id": "COLLAB001LBL0000000007",
+                              "_parent": {
+                                "$ref": "COLLAB001NAMC00000002"
+                              },
+                              "visible": false,
+                              "font": "Arial;13;0",
+                              "parentStyle": true,
+                              "left": 430,
+                              "top": 280,
+                              "width": 150,
+                              "height": 13,
+                              "text": "(from Interaction1)"
+                            },
+                            {
+                              "_type": "LabelView",
+                              "_id": "COLLAB001LBL0000000008",
+                              "_parent": {
+                                "$ref": "COLLAB001NAMC00000002"
+                              },
+                              "visible": false,
+                              "font": "Arial;13;0",
+                              "parentStyle": true,
+                              "left": 430,
+                              "top": 280,
+                              "width": 150,
+                              "height": 13
+                            }
+                          ],
+                          "font": "Arial;13;0",
+                          "parentStyle": true,
+                          "left": 430,
+                          "top": 280,
+                          "width": 151,
+                          "height": 40,
+                          "stereotypeLabel": {
+                            "$ref": "COLLAB001LBL0000000005"
+                          },
+                          "nameLabel": {
+                            "$ref": "COLLAB001LBL0000000006"
+                          },
+                          "namespaceLabel": {
+                            "$ref": "COLLAB001LBL0000000007"
+                          },
+                          "propertyLabel": {
+                            "$ref": "COLLAB001LBL0000000008"
+                          }
+                        }
+                      ],
+                      "font": "Arial;13;0",
+                      "fillColor": "#fff9c4",
+                      "left": 430,
+                      "top": 280,
+                      "width": 150,
+                      "height": 60,
+                      "nameCompartment": {
+                        "$ref": "COLLAB001NAMC00000002"
+                      }
+                    },
+                    {
+                      "_type": "UMLColLifelineView",
+                      "_id": "COLLAB001VIEW00000003",
+                      "_parent": {
+                        "$ref": "COLLAB001DIAG00000001"
+                      },
+                      "model": {
+                        "$ref": "COLLAB001LIFE000000003"
+                      },
+                      "subViews": [
+                        {
+                          "_type": "UMLNameCompartmentView",
+                          "_id": "COLLAB001NAMC00000003",
+                          "_parent": {
+                            "$ref": "COLLAB001VIEW00000003"
+                          },
+                          "model": {
+                            "$ref": "COLLAB001LIFE000000003"
+                          },
+                          "subViews": [
+                            {
+                              "_type": "LabelView",
+                              "_id": "COLLAB001LBL0000000009",
+                              "_parent": {
+                                "$ref": "COLLAB001NAMC00000003"
+                              },
+                              "visible": false,
+                              "font": "Arial;13;0",
+                              "parentStyle": true,
+                              "left": 430,
+                              "top": 500,
+                              "width": 170,
+                              "height": 13
+                            },
+                            {
+                              "_type": "LabelView",
+                              "_id": "COLLAB001LBL0000000010",
+                              "_parent": {
+                                "$ref": "COLLAB001NAMC00000003"
+                              },
+                              "font": "Arial;13;1",
+                              "parentStyle": true,
+                              "left": 435,
+                              "top": 507,
+                              "width": 160,
+                              "height": 13,
+                              "text": ": BookingController"
+                            },
+                            {
+                              "_type": "LabelView",
+                              "_id": "COLLAB001LBL0000000011",
+                              "_parent": {
+                                "$ref": "COLLAB001NAMC00000003"
+                              },
+                              "visible": false,
+                              "font": "Arial;13;0",
+                              "parentStyle": true,
+                              "left": 430,
+                              "top": 500,
+                              "width": 170,
+                              "height": 13,
+                              "text": "(from Interaction1)"
+                            },
+                            {
+                              "_type": "LabelView",
+                              "_id": "COLLAB001LBL0000000012",
+                              "_parent": {
+                                "$ref": "COLLAB001NAMC00000003"
+                              },
+                              "visible": false,
+                              "font": "Arial;13;0",
+                              "parentStyle": true,
+                              "left": 430,
+                              "top": 500,
+                              "width": 170,
+                              "height": 13
+                            }
+                          ],
+                          "font": "Arial;13;0",
+                          "parentStyle": true,
+                          "left": 430,
+                          "top": 500,
+                          "width": 171,
+                          "height": 40,
+                          "stereotypeLabel": {
+                            "$ref": "COLLAB001LBL0000000009"
+                          },
+                          "nameLabel": {
+                            "$ref": "COLLAB001LBL0000000010"
+                          },
+                          "namespaceLabel": {
+                            "$ref": "COLLAB001LBL0000000011"
+                          },
+                          "propertyLabel": {
+                            "$ref": "COLLAB001LBL0000000012"
+                          }
+                        }
+                      ],
+                      "font": "Arial;13;0",
+                      "fillColor": "#fff9c4",
+                      "left": 430,
+                      "top": 500,
+                      "width": 170,
+                      "height": 60,
+                      "nameCompartment": {
+                        "$ref": "COLLAB001NAMC00000003"
+                      }
+                    },
+                    {
+                      "_type": "UMLColLifelineView",
+                      "_id": "COLLAB001VIEW00000004",
+                      "_parent": {
+                        "$ref": "COLLAB001DIAG00000001"
+                      },
+                      "model": {
+                        "$ref": "COLLAB001LIFE000000004"
+                      },
+                      "subViews": [
+                        {
+                          "_type": "UMLNameCompartmentView",
+                          "_id": "COLLAB001NAMC00000004",
+                          "_parent": {
+                            "$ref": "COLLAB001VIEW00000004"
+                          },
+                          "model": {
+                            "$ref": "COLLAB001LIFE000000004"
+                          },
+                          "subViews": [
+                            {
+                              "_type": "LabelView",
+                              "_id": "COLLAB001LBL0000000013",
+                              "_parent": {
+                                "$ref": "COLLAB001NAMC00000004"
+                              },
+                              "visible": false,
+                              "font": "Arial;13;0",
+                              "parentStyle": true,
+                              "left": 430,
+                              "top": 720,
+                              "width": 120,
+                              "height": 13
+                            },
+                            {
+                              "_type": "LabelView",
+                              "_id": "COLLAB001LBL0000000014",
+                              "_parent": {
+                                "$ref": "COLLAB001NAMC00000004"
+                              },
+                              "font": "Arial;13;1",
+                              "parentStyle": true,
+                              "left": 435,
+                              "top": 727,
+                              "width": 110,
+                              "height": 13,
+                              "text": ": Database"
+                            },
+                            {
+                              "_type": "LabelView",
+                              "_id": "COLLAB001LBL0000000015",
+                              "_parent": {
+                                "$ref": "COLLAB001NAMC00000004"
+                              },
+                              "visible": false,
+                              "font": "Arial;13;0",
+                              "parentStyle": true,
+                              "left": 430,
+                              "top": 720,
+                              "width": 120,
+                              "height": 13,
+                              "text": "(from Interaction1)"
+                            },
+                            {
+                              "_type": "LabelView",
+                              "_id": "COLLAB001LBL0000000016",
+                              "_parent": {
+                                "$ref": "COLLAB001NAMC00000004"
+                              },
+                              "visible": false,
+                              "font": "Arial;13;0",
+                              "parentStyle": true,
+                              "left": 430,
+                              "top": 720,
+                              "width": 120,
+                              "height": 13
+                            }
+                          ],
+                          "font": "Arial;13;0",
+                          "parentStyle": true,
+                          "left": 430,
+                          "top": 720,
+                          "width": 121,
+                          "height": 40,
+                          "stereotypeLabel": {
+                            "$ref": "COLLAB001LBL0000000013"
+                          },
+                          "nameLabel": {
+                            "$ref": "COLLAB001LBL0000000014"
+                          },
+                          "namespaceLabel": {
+                            "$ref": "COLLAB001LBL0000000015"
+                          },
+                          "propertyLabel": {
+                            "$ref": "COLLAB001LBL0000000016"
+                          }
+                        }
+                      ],
+                      "font": "Arial;13;0",
+                      "fillColor": "#fff9c4",
+                      "left": 430,
+                      "top": 720,
+                      "width": 120,
+                      "height": 60,
+                      "nameCompartment": {
+                        "$ref": "COLLAB001NAMC00000004"
+                      }
+                    },
+                    {
+                      "_type": "UMLColLifelineView",
+                      "_id": "COLLAB001VIEW00000005",
+                      "_parent": {
+                        "$ref": "COLLAB001DIAG00000001"
+                      },
+                      "model": {
+                        "$ref": "COLLAB001LIFE000000005"
+                      },
+                      "subViews": [
+                        {
+                          "_type": "UMLNameCompartmentView",
+                          "_id": "COLLAB001NAMC00000005",
+                          "_parent": {
+                            "$ref": "COLLAB001VIEW00000005"
+                          },
+                          "model": {
+                            "$ref": "COLLAB001LIFE000000005"
+                          },
+                          "subViews": [
+                            {
+                              "_type": "LabelView",
+                              "_id": "COLLAB001LBL0000000017",
+                              "_parent": {
+                                "$ref": "COLLAB001NAMC00000005"
+                              },
+                              "visible": false,
+                              "font": "Arial;13;0",
+                              "parentStyle": true,
+                              "left": 780,
+                              "top": 280,
+                              "width": 160,
+                              "height": 13
+                            },
+                            {
+                              "_type": "LabelView",
+                              "_id": "COLLAB001LBL0000000018",
+                              "_parent": {
+                                "$ref": "COLLAB001NAMC00000005"
+                              },
+                              "font": "Arial;13;1",
+                              "parentStyle": true,
+                              "left": 785,
+                              "top": 287,
+                              "width": 150,
+                              "height": 13,
+                              "text": ": PaymentGateway"
+                            },
+                            {
+                              "_type": "LabelView",
+                              "_id": "COLLAB001LBL0000000019",
+                              "_parent": {
+                                "$ref": "COLLAB001NAMC00000005"
+                              },
+                              "visible": false,
+                              "font": "Arial;13;0",
+                              "parentStyle": true,
+                              "left": 780,
+                              "top": 280,
+                              "width": 160,
+                              "height": 13,
+                              "text": "(from Interaction1)"
+                            },
+                            {
+                              "_type": "LabelView",
+                              "_id": "COLLAB001LBL0000000020",
+                              "_parent": {
+                                "$ref": "COLLAB001NAMC00000005"
+                              },
+                              "visible": false,
+                              "font": "Arial;13;0",
+                              "parentStyle": true,
+                              "left": 780,
+                              "top": 280,
+                              "width": 160,
+                              "height": 13
+                            }
+                          ],
+                          "font": "Arial;13;0",
+                          "parentStyle": true,
+                          "left": 780,
+                          "top": 280,
+                          "width": 161,
+                          "height": 40,
+                          "stereotypeLabel": {
+                            "$ref": "COLLAB001LBL0000000017"
+                          },
+                          "nameLabel": {
+                            "$ref": "COLLAB001LBL0000000018"
+                          },
+                          "namespaceLabel": {
+                            "$ref": "COLLAB001LBL0000000019"
+                          },
+                          "propertyLabel": {
+                            "$ref": "COLLAB001LBL0000000020"
+                          }
+                        }
+                      ],
+                      "font": "Arial;13;0",
+                      "fillColor": "#e8d5f5",
+                      "left": 780,
+                      "top": 280,
+                      "width": 160,
+                      "height": 60,
+                      "nameCompartment": {
+                        "$ref": "COLLAB001NAMC00000005"
+                      }
+                    },
+                    {
+                      "_type": "UMLColLifelineView",
+                      "_id": "COLLAB001VIEW00000006",
+                      "_parent": {
+                        "$ref": "COLLAB001DIAG00000001"
+                      },
+                      "model": {
+                        "$ref": "COLLAB001LIFE000000006"
+                      },
+                      "subViews": [
+                        {
+                          "_type": "UMLNameCompartmentView",
+                          "_id": "COLLAB001NAMC00000006",
+                          "_parent": {
+                            "$ref": "COLLAB001VIEW00000006"
+                          },
+                          "model": {
+                            "$ref": "COLLAB001LIFE000000006"
+                          },
+                          "subViews": [
+                            {
+                              "_type": "LabelView",
+                              "_id": "COLLAB001LBL0000000021",
+                              "_parent": {
+                                "$ref": "COLLAB001NAMC00000006"
+                              },
+                              "visible": false,
+                              "font": "Arial;13;0",
+                              "parentStyle": true,
+                              "left": 60,
+                              "top": 640,
+                              "width": 170,
+                              "height": 13
+                            },
+                            {
+                              "_type": "LabelView",
+                              "_id": "COLLAB001LBL0000000022",
+                              "_parent": {
+                                "$ref": "COLLAB001NAMC00000006"
+                              },
+                              "font": "Arial;13;1",
+                              "parentStyle": true,
+                              "left": 65,
+                              "top": 647,
+                              "width": 160,
+                              "height": 13,
+                              "text": ": NotificationServer"
+                            },
+                            {
+                              "_type": "LabelView",
+                              "_id": "COLLAB001LBL0000000023",
+                              "_parent": {
+                                "$ref": "COLLAB001NAMC00000006"
+                              },
+                              "visible": false,
+                              "font": "Arial;13;0",
+                              "parentStyle": true,
+                              "left": 60,
+                              "top": 640,
+                              "width": 170,
+                              "height": 13,
+                              "text": "(from Interaction1)"
+                            },
+                            {
+                              "_type": "LabelView",
+                              "_id": "COLLAB001LBL0000000024",
+                              "_parent": {
+                                "$ref": "COLLAB001NAMC00000006"
+                              },
+                              "visible": false,
+                              "font": "Arial;13;0",
+                              "parentStyle": true,
+                              "left": 60,
+                              "top": 640,
+                              "width": 170,
+                              "height": 13
+                            }
+                          ],
+                          "font": "Arial;13;0",
+                          "parentStyle": true,
+                          "left": 60,
+                          "top": 640,
+                          "width": 171,
+                          "height": 40,
+                          "stereotypeLabel": {
+                            "$ref": "COLLAB001LBL0000000021"
+                          },
+                          "nameLabel": {
+                            "$ref": "COLLAB001LBL0000000022"
+                          },
+                          "namespaceLabel": {
+                            "$ref": "COLLAB001LBL0000000023"
+                          },
+                          "propertyLabel": {
+                            "$ref": "COLLAB001LBL0000000024"
+                          }
+                        }
+                      ],
+                      "font": "Arial;13;0",
+                      "fillColor": "#d4edda",
+                      "left": 60,
+                      "top": 640,
+                      "width": 170,
+                      "height": 60,
+                      "nameCompartment": {
+                        "$ref": "COLLAB001NAMC00000006"
+                      }
+                    },
+                    {
+                      "_type": "UMLColMessageView",
+                      "_id": "COLLAB001MSGV00000001",
+                      "_parent": {
+                        "$ref": "COLLAB001DIAG00000001"
+                      },
+                      "model": {
+                        "$ref": "COLLAB001MSG0000000001"
+                      },
+                      "source": {
+                        "$ref": "COLLAB001VIEW00000001"
+                      },
+                      "target": {
+                        "$ref": "COLLAB001VIEW00000002"
+                      },
+                      "font": "Arial;12;0",
+                      "lineColor": "#000000",
+                      "points": "180,295 430,295"
+                    },
+                    {
+                      "_type": "UMLColMessageView",
+                      "_id": "COLLAB001MSGV00000002",
+                      "_parent": {
+                        "$ref": "COLLAB001DIAG00000001"
+                      },
+                      "model": {
+                        "$ref": "COLLAB001MSG0000000002"
+                      },
+                      "source": {
+                        "$ref": "COLLAB001VIEW00000002"
+                      },
+                      "target": {
+                        "$ref": "COLLAB001VIEW00000004"
+                      },
+                      "font": "Arial;12;0",
+                      "lineColor": "#000000",
+                      "points": "510,340 510,720"
+                    },
+                    {
+                      "_type": "UMLColMessageView",
+                      "_id": "COLLAB001MSGV00000003",
+                      "_parent": {
+                        "$ref": "COLLAB001DIAG00000001"
+                      },
+                      "model": {
+                        "$ref": "COLLAB001MSG0000000003"
+                      },
+                      "source": {
+                        "$ref": "COLLAB001VIEW00000004"
+                      },
+                      "target": {
+                        "$ref": "COLLAB001VIEW00000002"
+                      },
+                      "font": "Arial;12;0",
+                      "lineColor": "#000000",
+                      "lineStyle": 1,
+                      "points": "490,720 490,340"
+                    },
+                    {
+                      "_type": "UMLColMessageView",
+                      "_id": "COLLAB001MSGV00000004",
+                      "_parent": {
+                        "$ref": "COLLAB001DIAG00000001"
+                      },
+                      "model": {
+                        "$ref": "COLLAB001MSG0000000004"
+                      },
+                      "source": {
+                        "$ref": "COLLAB001VIEW00000002"
+                      },
+                      "target": {
+                        "$ref": "COLLAB001VIEW00000001"
+                      },
+                      "font": "Arial;12;0",
+                      "lineColor": "#000000",
+                      "lineStyle": 1,
+                      "points": "430,310 180,310"
+                    },
+                    {
+                      "_type": "UMLColMessageView",
+                      "_id": "COLLAB001MSGV00000005",
+                      "_parent": {
+                        "$ref": "COLLAB001DIAG00000001"
+                      },
+                      "model": {
+                        "$ref": "COLLAB001MSG0000000005"
+                      },
+                      "source": {
+                        "$ref": "COLLAB001VIEW00000001"
+                      },
+                      "target": {
+                        "$ref": "COLLAB001VIEW00000002"
+                      },
+                      "font": "Arial;12;0",
+                      "lineColor": "#000000",
+                      "points": "180,320 430,320"
+                    },
+                    {
+                      "_type": "UMLColMessageView",
+                      "_id": "COLLAB001MSGV00000006",
+                      "_parent": {
+                        "$ref": "COLLAB001DIAG00000001"
+                      },
+                      "model": {
+                        "$ref": "COLLAB001MSG0000000006"
+                      },
+                      "source": {
+                        "$ref": "COLLAB001VIEW00000002"
+                      },
+                      "target": {
+                        "$ref": "COLLAB001VIEW00000003"
+                      },
+                      "font": "Arial;12;0",
+                      "lineColor": "#000000",
+                      "points": "530,340 530,500"
+                    },
+                    {
+                      "_type": "UMLColMessageView",
+                      "_id": "COLLAB001MSGV00000007",
+                      "_parent": {
+                        "$ref": "COLLAB001DIAG00000001"
+                      },
+                      "model": {
+                        "$ref": "COLLAB001MSG0000000007"
+                      },
+                      "source": {
+                        "$ref": "COLLAB001VIEW00000003"
+                      },
+                      "target": {
+                        "$ref": "COLLAB001VIEW00000004"
+                      },
+                      "font": "Arial;12;0",
+                      "lineColor": "#000000",
+                      "points": "555,560 555,720"
+                    },
+                    {
+                      "_type": "UMLColMessageView",
+                      "_id": "COLLAB001MSGV00000008",
+                      "_parent": {
+                        "$ref": "COLLAB001DIAG00000001"
+                      },
+                      "model": {
+                        "$ref": "COLLAB001MSG0000000008"
+                      },
+                      "source": {
+                        "$ref": "COLLAB001VIEW00000004"
+                      },
+                      "target": {
+                        "$ref": "COLLAB001VIEW00000003"
+                      },
+                      "font": "Arial;12;0",
+                      "lineColor": "#000000",
+                      "lineStyle": 1,
+                      "points": "535,720 535,560"
+                    },
+                    {
+                      "_type": "UMLColMessageView",
+                      "_id": "COLLAB001MSGV00000009",
+                      "_parent": {
+                        "$ref": "COLLAB001DIAG00000001"
+                      },
+                      "model": {
+                        "$ref": "COLLAB001MSG0000000009"
+                      },
+                      "source": {
+                        "$ref": "COLLAB001VIEW00000003"
+                      },
+                      "target": {
+                        "$ref": "COLLAB001VIEW00000002"
+                      },
+                      "font": "Arial;12;0",
+                      "lineColor": "#000000",
+                      "lineStyle": 1,
+                      "points": "510,500 510,340"
+                    },
+                    {
+                      "_type": "UMLColMessageView",
+                      "_id": "COLLAB001MSGV00000010",
+                      "_parent": {
+                        "$ref": "COLLAB001DIAG00000001"
+                      },
+                      "model": {
+                        "$ref": "COLLAB001MSG0000000010"
+                      },
+                      "source": {
+                        "$ref": "COLLAB001VIEW00000001"
+                      },
+                      "target": {
+                        "$ref": "COLLAB001VIEW00000002"
+                      },
+                      "font": "Arial;12;0",
+                      "lineColor": "#000000",
+                      "points": "180,330 430,330"
+                    },
+                    {
+                      "_type": "UMLColMessageView",
+                      "_id": "COLLAB001MSGV00000011",
+                      "_parent": {
+                        "$ref": "COLLAB001DIAG00000001"
+                      },
+                      "model": {
+                        "$ref": "COLLAB001MSG0000000011"
+                      },
+                      "source": {
+                        "$ref": "COLLAB001VIEW00000002"
+                      },
+                      "target": {
+                        "$ref": "COLLAB001VIEW00000005"
+                      },
+                      "font": "Arial;12;0",
+                      "lineColor": "#000000",
+                      "points": "580,300 780,300"
+                    },
+                    {
+                      "_type": "UMLColMessageView",
+                      "_id": "COLLAB001MSGV00000012",
+                      "_parent": {
+                        "$ref": "COLLAB001DIAG00000001"
+                      },
+                      "model": {
+                        "$ref": "COLLAB001MSG0000000012"
+                      },
+                      "source": {
+                        "$ref": "COLLAB001VIEW00000005"
+                      },
+                      "target": {
+                        "$ref": "COLLAB001VIEW00000002"
+                      },
+                      "font": "Arial;12;0",
+                      "lineColor": "#000000",
+                      "lineStyle": 1,
+                      "points": "780,315 580,315"
+                    },
+                    {
+                      "_type": "UMLColMessageView",
+                      "_id": "COLLAB001MSGV00000013",
+                      "_parent": {
+                        "$ref": "COLLAB001DIAG00000001"
+                      },
+                      "model": {
+                        "$ref": "COLLAB001MSG0000000013"
+                      },
+                      "source": {
+                        "$ref": "COLLAB001VIEW00000002"
+                      },
+                      "target": {
+                        "$ref": "COLLAB001VIEW00000004"
+                      },
+                      "font": "Arial;12;0",
+                      "lineColor": "#000000",
+                      "points": "470,340 470,720"
+                    },
+                    {
+                      "_type": "UMLColMessageView",
+                      "_id": "COLLAB001MSGV00000014",
+                      "_parent": {
+                        "$ref": "COLLAB001DIAG00000001"
+                      },
+                      "model": {
+                        "$ref": "COLLAB001MSG0000000014"
+                      },
+                      "source": {
+                        "$ref": "COLLAB001VIEW00000002"
+                      },
+                      "target": {
+                        "$ref": "COLLAB001VIEW00000006"
+                      },
+                      "font": "Arial;12;0",
+                      "lineColor": "#000000",
+                      "points": "430,330 230,640"
+                    },
+                    {
+                      "_type": "UMLColMessageView",
+                      "_id": "COLLAB001MSGV00000015",
+                      "_parent": {
+                        "$ref": "COLLAB001DIAG00000001"
+                      },
+                      "model": {
+                        "$ref": "COLLAB001MSG0000000015"
+                      },
+                      "source": {
+                        "$ref": "COLLAB001VIEW00000002"
+                      },
+                      "target": {
+                        "$ref": "COLLAB001VIEW00000001"
+                      },
+                      "font": "Arial;12;0",
+                      "lineColor": "#000000",
+                      "lineStyle": 1,
+                      "points": "430,340 180,340"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
