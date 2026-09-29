@@ -24,6 +24,58 @@ An expert **Antigravity Skill** for programmatically designing, generating, repa
 
 ---
 
+## Installation for Antigravity Users
+
+Choose your operating system and terminal below:
+
+### Windows (PowerShell)
+
+#### Global Installation (Available across all projects on your PC)
+```powershell
+New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.gemini\config\skills"
+git clone https://github.com/advyth-mummadisetty/staruml-diagram-generator.git "$env:USERPROFILE\.gemini\config\skills\staruml-diagram-generator"
+```
+
+#### Workspace Installation (Inside a specific project folder)
+```powershell
+New-Item -ItemType Directory -Force -Path ".agents\skills"
+git clone https://github.com/advyth-mummadisetty/staruml-diagram-generator.git ".agents\skills\staruml-diagram-generator"
+```
+
+---
+
+### Windows (Command Prompt - `cmd.exe`)
+
+#### Global Installation (Available across all projects on your PC)
+```cmd
+mkdir "%USERPROFILE%\.gemini\config\skills"
+git clone https://github.com/advyth-mummadisetty/staruml-diagram-generator.git "%USERPROFILE%\.gemini\config\skills\staruml-diagram-generator"
+```
+
+#### Workspace Installation (Inside a specific project folder)
+```cmd
+mkdir .agents\skills
+git clone https://github.com/advyth-mummadisetty/staruml-diagram-generator.git .agents\skills\staruml-diagram-generator
+```
+
+---
+
+### Linux & macOS (Bash / Zsh)
+
+#### Global Installation (Available across all projects on your machine)
+```bash
+mkdir -p ~/.gemini/config/skills
+git clone https://github.com/advyth-mummadisetty/staruml-diagram-generator.git ~/.gemini/config/skills/staruml-diagram-generator
+```
+
+#### Workspace Installation (Inside a specific project folder)
+```bash
+mkdir -p .agents/skills
+git clone https://github.com/advyth-mummadisetty/staruml-diagram-generator.git .agents/skills/staruml-diagram-generator
+```
+
+---
+
 ## Directory Structure
 
 ```text
@@ -37,32 +89,11 @@ staruml-diagram-generator/
 │   ├── staruml_utils.py                    # ID generator, deep view cloner, and polar math tools
 │   ├── build_communication_diagram.py      # Standalone CLI generator for collision-free collaboration diagrams
 │   └── export_and_verify.py                # Headless StarUML CLI compiler & visual inspection tool
-└── examples/
-    ├── sample_communication_spec.json      # Declarative input specification schema
-    └── collaboration_template.mdj          # Valid StarUML base view template
+├── examples/
+│   ├── sample_communication_spec.json      # Declarative input specification schema
+│   └── collaboration_template.mdj          # Valid StarUML base view template
+└── install_instructions.txt                # Raw copy-pasteable installation commands for all OS
 ```
-
----
-
-## Installation for Antigravity Users
-
-### Option 1: Workspace Installation (Project-Specific)
-Clone or copy this repository into your project's `.agents/skills/` directory:
-
-```bash
-mkdir -p .agents/skills
-git clone https://github.com/advyth-mummadisetty/staruml-diagram-generator.git .agents/skills/staruml-diagram-generator
-```
-
-### Option 2: Global Installation (Available across all projects on your machine)
-Clone or copy this repository into your Antigravity global configuration:
-
-```bash
-mkdir -p ~/.gemini/config/skills
-git clone https://github.com/advyth-mummadisetty/staruml-diagram-generator.git ~/.gemini/config/skills/staruml-diagram-generator
-```
-
-Once installed, your Antigravity agent will automatically discover the skill and trigger it whenever you ask to generate, fix, layout, or export StarUML diagrams.
 
 ---
 

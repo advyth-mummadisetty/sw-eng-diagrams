@@ -1,0 +1,52 @@
+================================================================================
+   HOW TO INSTALL STARUML-DIAGRAM-GENERATOR SKILL FOR ANTIGRAVITY USERS
+================================================================================
+
+GitHub Repository:
+https://github.com/advyth-mummadisetty/staruml-diagram-generator.git
+
+--------------------------------------------------------------------------------
+1. WINDOWS COMMAND PROMPT (cmd.exe)
+--------------------------------------------------------------------------------
+
+A) Global Installation (Works across all projects on your PC):
+   mkdir "%USERPROFILE%\.gemini\config\skills"
+   git clone https://github.com/advyth-mummadisetty/staruml-diagram-generator.git "%USERPROFILE%\.gemini\config\skills\staruml-diagram-generator"
+
+B) Project Installation (Inside a specific project workspace):
+   mkdir .agents\skills
+   git clone https://github.com/advyth-mummadisetty/staruml-diagram-generator.git .agents\skills\staruml-diagram-generator
+
+
+--------------------------------------------------------------------------------
+2. WINDOWS POWERSHELL
+--------------------------------------------------------------------------------
+
+A) Global Installation (Works across all projects on your PC):
+   New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.gemini\config\skills"
+   git clone https://github.com/advyth-mummadisetty/staruml-diagram-generator.git "$env:USERPROFILE\.gemini\config\skills\staruml-diagram-generator"
+
+B) Project Installation (Inside a specific project workspace):
+   New-Item -ItemType Directory -Force -Path ".agents\skills"
+   git clone https://github.com/advyth-mummadisetty/staruml-diagram-generator.git ".agents\skills\staruml-diagram-generator"
+
+
+--------------------------------------------------------------------------------
+3. LINUX & MACOS (Bash / Zsh Terminal)
+--------------------------------------------------------------------------------
+
+A) Global Installation (Works across all projects on your machine):
+   mkdir -p ~/.gemini/config/skills
+   git clone https://github.com/advyth-mummadisetty/staruml-diagram-generator.git ~/.gemini/config/skills/staruml-diagram-generator
+
+B) Project Installation (Inside a specific project workspace):
+   mkdir -p .agents/skills
+   git clone https://github.com/advyth-mummadisetty/staruml-diagram-generator.git .agents/skills/staruml-diagram-generator
+
+
+================================================================================
+HOW IT WORKS:
+Once cloned, the Google Antigravity agent will automatically discover the skill
+and activate it whenever asked to create, repair, layout, or headlessly export 
+StarUML diagrams (.mdj format).
+================================================================================
